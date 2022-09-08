@@ -22,9 +22,10 @@ function App() {
     <BrowserRouter>
       <div className="light">
         <div className="container">
-          <Nav toggleTheme={toggleTheme} />
-          <ThemeContext.Provider value={theme}>
+          
+          <ThemeContext.Provider value={{theme, toggleTheme}}>
             <YearContext.Provider value={{ year, handleYearChange }}>
+            <Nav toggleTheme={toggleTheme} />
               <Routes>
                 <Route path="/" element={<Drivers />} />
                 <Route path="drivers" element={<Drivers />} />

@@ -19,7 +19,7 @@ const Driver = ({drivers}) => {
             let driverName = url.split("/").pop();
 
             return (
-              <tr key={driverId} className={`bg-${theme}`}>
+              <tr key={driverId} className={`bg-${theme.theme}`}>
                 <td>{position}</td>
                 <td>
                   <div className="align-items">
@@ -30,7 +30,7 @@ const Driver = ({drivers}) => {
                     />
                     <Link
                       to={`drivers/driverdetails/${driverName}/${driverId}`}
-                      className={`link-${theme}`}
+                      className={`link-${theme.theme}`}
                     >
                       {`${givenName} ${familyName}`}
                     </Link>

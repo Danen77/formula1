@@ -19,7 +19,7 @@ const Nav = ({ toggleTheme }) => {
               className="btn-clear"
               onClick={toggleTheme}
             >
-              {theme === "light" ? "🔦" : "⚡"}
+              {theme.theme === "light" ? "Light" : "Dark"}
             </button>
           </div>
         </div>

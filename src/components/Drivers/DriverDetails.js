@@ -141,12 +141,12 @@ const DriverDetails = () => {
             const { grid, position, Constructor } = race.Results[0];
 
             return (
-              <tr key={round} className={`bg-${theme}`}>
+              <tr key={round} className={`bg-${theme.theme}`}>
                 <td>{round}</td>
                 <td>
                   <Link
                     to={__dirname + `races/race/${round}`}
-                    className={`link-${theme}`}
+                    className={`link-${theme.theme}`}
                   >
                     {raceName}
                   </Link>
